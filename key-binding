@@ -1,0 +1,10 @@
+[
+  	{ "keys": ["command+d"], "command": "duplicate_line" },	
+  	{ "keys": ["ctrl+g"], "command": "find_under_expand" },	
+  	{ "keys": ["option+command+left"], "command": "jump_back" },
+  	{ "keys": ["option+command+right"], "command": "jump_forward" },
+  	{ "keys": ["command+backspace"], "command": "run_macro_file", "args": {"file": "res://Packages/Default/Delete Line.sublime-macro"}},
+  	{"keys":  ["option+up"],"command": "expand_region"},
+  	//needs the expand region package to work
+  	{"keys":  ["option+down"],"command": "expand_region","args": {"undo": true},"context": [{"key": "expand_region_soft_undo"}]}
+]
